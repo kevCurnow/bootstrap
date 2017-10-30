@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap Grid Introduction</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Modal stuff -->
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- NOTE: Need these links for bootstrap https://www.bootstrapcdn.com/-->
+  	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<!-- <div class="row">
+		<div class="col-md-6" id="box1">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+
+		<div class="col-md-6" id="box2">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+
+	</div>
+
+	<div class="row">
+		<div class="col-md-4" id="box3">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+
+		<div class="col-md-4" id="box4">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+
+		<div class="col-md-4" id="box5">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+
+	</div> -->
+	<!-- Nav Header -->
+	<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+	<!-- Content -->
+	<div class="row">
+		<!-- Food Table -->
+		<div class="col-md-6">
+			<table class="table table-condensed table-hover">
+				<thead>
+					<tr> 
+						<th>Day of Week</th>
+						<th>Desired Lunch</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr class= "bg-info">
+						<td>Monday</td>
+						<td>Pizza</td>
+					</tr>
+
+					<tr>
+						<td>Tuesday</td>
+						<td>Tacos</td>
+					</tr>
+
+					<tr>
+						<td>Wednesday</td>
+						<td>Portillo's</td>
+					</tr>
+
+					<tr>
+						<td>Thursday</td>
+						<td>Pasta</td>
+					</tr>
+
+					<tr>
+						<td>Friday</td>
+						<td>Wings</td>
+					</tr>
+
+				</tbody>
+			</table>
+		</div>
+
+		<!-- Food Form -->
+		<div class="col-md-3">
+			<form>
+				  <div class="form-group">
+				    <label>Day</label>
+				    <input class="form-control" type="text" placeholder="Day">
+				  </div>
+				  <div class="form-group">
+				    <label>Food</label>
+				    <input class="form-control" type="text" placeholder="Food">
+				  </div>
+				  <button class="btn btn-success" type="submit">
+				  	<span class="glyphicon glyphicon-ok"></span>
+				  </button>
+				  <i class="fa fa-facebook" aria-hidden="true"></i>
+			</form>
+		</div>
+	</div>
+	<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+      	Modal yo!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
